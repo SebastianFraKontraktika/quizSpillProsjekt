@@ -7,30 +7,41 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
 </head>
 <body class="bg-black">
-    <ul id="allQuest">
+    <script src="main.js"></script>
+    <div id="q0">
         <article class="text-white flex flex-col items-center">
-            <li class="list-item">
-                <h1 class="my-10">wow, spørsmål!!!!!!! SÅ KULT!!!!!</h1>
-                <div class="flex flex-wrap size-100">
-                    <button id="riktig" class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">riktig!!!!!!</button>
-                    <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">fuckingsFEIL</button>
-                    <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">fuckingsFEIL</button>
-                    <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">fuckingsFEIL</button>
-                </div>
-            </li>
+            <h1 class="my-10 ml-20">wow, spørsmål!!!!!!! SÅ KULT!!!!!</h1>
+            <div class="flex flex-wrap size-100">
+                <button onclick="next()" value="riktig" class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">riktig!!!!!!</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+            </div>
         </article>
+     </div>
+     <div id="q1"  style="display: none">
         <article class="text-white flex flex-col items-center">
-            <li class="hidden">
-                <h1 class="my-10">wow, spørsmål!!!!!!! SÅ KULT!!!!!</h1>
-                <div class="flex flex-wrap size-100">
-                    <button id="riktig" class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">riktig!!!!!!</button>
-                    <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">fuckingsFEIL</button>
-                    <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">fuckingsFEIL</button>
-                    <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500">fuckingsFEIL</button>
-                </div>
-            </li>
+            <h1 class="my-10 ml-20">wow, spørsmål!!!!!!! SÅ KULT!!!!!</h1>
+            <div class="flex flex-wrap size-100">
+                <button onclick="next()" value="riktig" class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">riktig2222!!!!!!</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+            </div>
         </article>
-    </ul>
+     </div>
+     <div id="q2"  style="display: none">
+        <article class="text-white flex flex-col items-center">
+            <h1 class="my-10 ml-20">wow, spørsmål!!!!!!! SÅ KULT!!!!!</h1>
+            <div class="flex flex-wrap size-100">
+                <button onclick="next()" value="riktig" class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">riktig3333!!!!!!</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+                <button class="cursor-pointer size-35 ml-7.5 m-5 bg-gray-500 hover:bg-black duration-1000">fuckingsFEIL</button>
+            </div>
+        </article>
+     </div>
+
     <nav class="text-white flex flex-row justify-evenly text-4xl bg-gray-800 py-5 fixed bottom-0 inset-x-0">
         <button class="cursor-pointer">hint</button>
         <button class="cursor-pointer">fjern et alternativ</button>

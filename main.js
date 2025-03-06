@@ -1,5 +1,5 @@
-var showing = [1, 0, 0];
-var questions = ['q0', 'q1', 'q2'];
+var showing = [1, 0, 0, 0];
+var questions = ['q0', 'q1', 'q2', 'q3'];
 
 function next() {
     var qElems = [];

@@ -21,3 +21,18 @@ function next() {
         }
     }      
 }
+
+function fjernAlt() {
+    let Alt = document.getElementsByClassName("ignorer");
+    let result = [];
+
+    for (let i = 0; i < Alt.length; i++) {
+        
+        if (Alt[i].style.display === "none") {
+            Alt[i].style.display = "block";
+          } else {
+            Alt[i].style.display = "none";
+          }
+    }
+    console.log(result)
+}

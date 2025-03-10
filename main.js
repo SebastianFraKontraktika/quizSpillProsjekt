@@ -24,7 +24,6 @@ function next() {
     let result = [];
 
     for (let i = 0; i < Alt.length; i++) {
-        console.log(result)
         if (Alt[i].style.display === "none") {
             Alt[i].style.display = "block";
           }
@@ -36,12 +35,10 @@ function fjernAlt() {
     let result = [];
 
     for (let i = 0; i < Alt.length; i++) {
-        console.log(result)
         if (Alt[i].style.display === "none") {
             Alt[i].style.display = "block";
           } else {
             Alt[i].style.display = "none";
           }
     }
-    console.log(result)
 }

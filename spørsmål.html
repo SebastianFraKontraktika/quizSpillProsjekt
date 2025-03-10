@@ -52,9 +52,15 @@
             </div>
         </article>
      </div>
-
+    <section class="flex flex-col">
+        <div class="hintKlass"></div>
+        <div class="hintKlass text-white text-xl border-5 border-gray-800 hidden">hint1</div>
+        <div class="hintKlass text-white text-xl border-5 border-gray-800 hidden">hint2</div>
+        <div class="hintKlass text-white text-xl border-5 border-gray-800 hidden">hint3</div>
+        <div class="hintKlass text-white text-xl border-5 border-gray-800 hidden">hint4</div>
+    </section>
     <nav class="text-white flex flex-row justify-evenly text-4xl bg-gray-800 py-5 fixed bottom-0 inset-x-0">
-        <button class="cursor-pointer">hint</button>
+        <button onclick="hint()" class="cursor-pointer">hint</button>
         <button onclick="fjernAlt()" class="cursor-pointer">fjern et alternativ</button>
         <a href="taperSkjerm.html">
             <button class="cursor-pointer">gi opp (pyse)</button>

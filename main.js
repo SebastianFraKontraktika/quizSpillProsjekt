@@ -1,7 +1,10 @@
+let velger = 0
+let selveHint = document.getElementsByClassName("hintKlass")
 var showing = [1, 0, 0, 0];
 var questions = ['q0', 'q1', 'q2', 'q3'];
 
 function next() {
+    velger += 1
     var qElems = [];
     for (var i = 0; i < questions.length; i++) {
         qElems.push(document.getElementById(questions[i]));   
@@ -41,4 +44,10 @@ function fjernAlt() {
             Alt[i].style.display = "none";
           }
     }
+}
+
+function hint() {
+    selveHint[velger].remove()
+    selveHint[velger].style.display = 'block'
+    velger -= 1
 }

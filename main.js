@@ -19,7 +19,16 @@ function next() {
             }
             break;
         }
-    }      
+    } 
+    let Alt = document.getElementsByClassName("ignorer");
+    let result = [];
+
+    for (let i = 0; i < Alt.length; i++) {
+        console.log(result)
+        if (Alt[i].style.display === "none") {
+            Alt[i].style.display = "block";
+          }
+    }   
 }
 
 function fjernAlt() {
@@ -27,7 +36,7 @@ function fjernAlt() {
     let result = [];
 
     for (let i = 0; i < Alt.length; i++) {
-        
+        console.log(result)
         if (Alt[i].style.display === "none") {
             Alt[i].style.display = "block";
           } else {

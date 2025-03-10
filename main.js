@@ -2,6 +2,7 @@ let velger = 0
 let selveHint = document.getElementsByClassName("hintKlass")
 var showing = [1, 0, 0, 0];
 var questions = ['q0', 'q1', 'q2', 'q3'];
+let poeng = 20
 
 function next() {
     velger += 1
@@ -30,7 +31,11 @@ function next() {
         if (Alt[i].style.display === "none") {
             Alt[i].style.display = "block";
           }
-    }   
+    }  
+    if (poeng <= 10) {
+        window.open("taperSkjerm.html");
+        window.close()
+    } 
 }
 
 function fjernAlt() {
@@ -50,4 +55,15 @@ function hint() {
     selveHint[velger].remove()
     selveHint[velger].style.display = 'block'
     velger -= 1
+}
+
+function poengSys(event) {
+    let text = event.target.value;
+    if (text == "feil") {
+        poeng -= 1
+        document.getElementById("poeng").innerHTML = poeng
+
+    } else if (text == "riktig") {
+        document.getElementById("poeng").innerHTML = poeng
+    }
 }

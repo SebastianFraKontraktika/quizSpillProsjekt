@@ -7,7 +7,10 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
 </head>
 <body onclick="poengSys(event)" class="bg-black">
-    <script src="main.js"></script>
+    <script src="main.js">
+        var customWindow = window.open('', '_blank', ''); 
+        customWindow.close();
+    </script>
     <div id="q0">
         <article class="text-white flex flex-col items-center">
             <h1 class="my-10">wow, spørsmål!!!!!!! SÅ KULT!!!!!</h1>

@@ -2,7 +2,7 @@ let velger = 0
 let selveHint = document.getElementsByClassName("hintKlass")
 var showing = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var questions = ['q0', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14'];
-let poeng = 20
+let poeng = 15
 
 function next() {
     velger += 1
@@ -32,7 +32,7 @@ function next() {
             Alt[i].style.display = "block";
           }
     }  
-    if (poeng <= 10) {
+    if (poeng == 7) {
         window.open("taperSkjerm.html");
         window.close()
     } 
@@ -69,11 +69,11 @@ function poengSys(event) {
 }
 
 function sisteSpm() {
-    if (poeng == 20) {
+    if (poeng == 15) {
         window.open("vinnerSkjerm.html")
         window.close()
     } 
-    else if (poeng <= 19) {
+    else if (poeng <= 14) {
         window.open("midMaalig.html")
         window.close()
     }

@@ -67,3 +67,14 @@ function poengSys(event) {
         document.getElementById("poeng").innerHTML = poeng
     }
 }
+
+function sisteSpm() {
+    if (poeng == 20) {
+        window.open("vinnerSkjerm.html")
+        window.close()
+    } 
+    else if (poeng <= 19) {
+        window.open("midMaalig.html")
+        window.close()
+    }
+}

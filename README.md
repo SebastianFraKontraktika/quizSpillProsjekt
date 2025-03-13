@@ -11,7 +11,7 @@
 # hosting
 
 ---
-this will be hosted on vercel or maybe neocities. I dunno, any free hosting service. 
+this will be hosted on vercel I guess. 
 It wont be big
 
 ---

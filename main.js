@@ -76,7 +76,7 @@ function sisteSpm() {
         window.open("vinnerSkjerm.html")
         window.close()
     } 
-    else if (poeng <= 14) {
+    else if (poeng >= 9 <= 14) {
         window.open("midMaalig.html")
         window.close()
     }

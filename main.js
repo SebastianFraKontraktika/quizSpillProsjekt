@@ -65,6 +65,9 @@ function poengSys(event) {
 
     } else if (text == "riktig") {
         document.getElementById("poeng").innerHTML = poeng
+    } else if (text == "pyse") {
+        poeng -= 0.5
+        document.getElementById("poeng").innerHTML = poeng
     }
 }
 
@@ -75,6 +78,10 @@ function sisteSpm() {
     } 
     else if (poeng <= 14) {
         window.open("midMaalig.html")
+        window.close()
+    }
+    else if (poeng == 8) {
+        window.open("taperSkjerm")
         window.close()
     }
 }

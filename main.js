@@ -31,11 +31,7 @@ function next() {
         if (Alt[i].style.display === "none") {
             Alt[i].style.display = "block";
           }
-    }  
-    if (poeng == 7) {
-        window.open("taperSkjerm.html");
-        window.close()
-    } 
+    }
 }
 
 function fjernAlt() {
@@ -48,7 +44,7 @@ function fjernAlt() {
           } else {
             Alt[i].style.display = "none";
           }
-    }
+    } 
 }
 
 function hint() {
@@ -69,6 +65,10 @@ function poengSys(event) {
         poeng -= 0.5
         document.getElementById("poeng").innerHTML = poeng
     }
+    if (poeng == 7) {
+        window.open("taperSkjerm.html");
+        window.close()
+    } 
 }
 
 function sisteSpm() {
@@ -80,7 +80,7 @@ function sisteSpm() {
         window.open("midMaalig.html")
         window.close()
     }
-    else if (poeng == 8) {
+    else if (poeng <= 8) {
         window.open("taperSkjerm")
         window.close()
     }

@@ -19,7 +19,7 @@ It wont be big
 
 ---
 I dunno, my mail?
-semaa024@osloskolen.no
+sebmlin0818@gmail.com
 
 ---
 # contributations
